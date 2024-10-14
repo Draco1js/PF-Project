@@ -1,3 +1,4 @@
 *.o
 hotel
 build
+test_hotel
