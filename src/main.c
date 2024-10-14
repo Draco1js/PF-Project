@@ -5,6 +5,7 @@
 #include "services.h"
 #include "database.h"
 #include "error_handling.h"
+#include "test.h"
 
 int getUserType()
 {
@@ -18,6 +19,9 @@ int getUserType()
 
 int main()
 {
+	// //Uncomment the following line to run the test cases
+	// return test();
+
 	clearConsole();
 	int userType = getUserType();
 	while (userType != 3)
