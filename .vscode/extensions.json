@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "mhutchie.git-graph",
+	"vscode-icons-team.vscode-icons",
+	"eamodio.gitlens",
+	"ms-vscode.makefile-tools",
+	"ms-vsliveshare.vsliveshare",
+	"dbaeumer.vscode-eslint",
+	"twxs.cmake",
+	"ms-vscode.cmake-tools",
+	"ms-vscode.cpptools"
+  ]
+}
