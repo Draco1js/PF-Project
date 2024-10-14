@@ -17,3 +17,7 @@ The `Makefile` file is a script that automatically takes all the source files fr
 
 
 Whenever you're working on this project, and need a method to be available in another file to use, make sure you are mentioning it in the respective header file of the exact name, in a similar format to the already-present methods.
+
+## How to Contribute:
+
+Use [this](https://www.dataschool.io/how-to-contribute-on-github/) guide to learn how to fork and create pull requests efficiently: [by dataschool.io](https://www.dataschool.io/how-to-contribute-on-github/)
