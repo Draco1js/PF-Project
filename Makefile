@@ -1,17 +1,20 @@
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -Iinclude
 TARGET = hotel
-SOURCES = main.c guest.c admin.c room.c services.c database.c error_handling.c
-OBJECTS = $(patsubst %.c,build/%.o,$(SOURCES))
+SOURCES = src/main.c src/guest.c src/admin.c src/room.c src/services.c src/database.c src/error_handling.c
+OBJECTS = $(patsubst src/%.c,build/%.o,$(SOURCES))
 
-all: $(TARGET)
+all: $(TARGET) run
 
 $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS)
 
-build/%.o: %.c
+build/%.o: src/%.c
 	@mkdir -p build
 	$(CC) $(CFLAGS) -c $< -o $@
+
+run: $(TARGET)
+	./$(TARGET)
 
 clean:
 	rm -rf build $(TARGET)
