@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "guest.h"
 #include "admin.h"
-#include "room.h"
-#include "services.h"
 #include "database.h"
 #include "error_handling.h"
 #include "test.h"

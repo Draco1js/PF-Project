@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "admin.h"
-#include "room.h"
 #include "database.h"
 #include "error_handling.h"
 
@@ -35,21 +34,21 @@ void adminMenu() {
 }
 
 void adminLogin() {
-    // Logic for admin authentication
+    //  admin authentication
 }
 
 void manageRooms() {
-    // Logic for adding, modifying, or deleting room details
+    // adding, modifying, deleting room details
 }
 
 void viewReservations() {
-    // Logic for viewing all guest reservations
+    // viewing all guest reservations
 }
 
 void generateStatistics() {
-    // Logic for generating statistics
+    // generating statistics
 }
 
 void generateReport() {
-    // Logic for generating booking and revenue reports
+    // generating booking and revenue reports
 }

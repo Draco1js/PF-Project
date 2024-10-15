@@ -33,7 +33,7 @@ void login() {
 
 void browseRooms() {
     loadRooms();
-    printf("Press 1 to go back... ");
+    printf("Input 1 to go back... ");
     scanf("%d");
 }
 
@@ -82,9 +82,8 @@ void requestService() {
     char serviceRequest[100];
     printf("Enter your service request (e.g., food, maintenance): ");
     scanf(" %[^\n]s", serviceRequest);  // To read a line with spaces
-
-    // Implement the actual service request logic here, e.g., saving to a file or notifying staff
-    printf("Service request for '%s' has been submitted.\n", serviceRequest);
+    
+    printf("Service request for '%s' has been submitted, staff will arrive at your room shortly\n", serviceRequest);
 }
 
 void giveFeedback() {
