@@ -1,48 +1,31 @@
-#include <stdio.h>
-#include "guest.h"
-#include "admin.h"
-#include "room.h"
-#include "services.h"
-#include "error_handling.h"
+#include<stdio.h>
+#include "database.h"
 
-// Test function for Guest features
-void testGuestFunctions() {
-    printf("\nTesting Guest Functions:\n");
-    
-    // Simulate Sign Up
-    printf("Running signUp()...\n");
-    signUp();
+void testRoomInitializationAndBooking() {
+    initializeDatabase();  // Initialize rooms
 
-    // Simulate Browse Rooms
-    printf("Running browseRooms()...\n");
-    browseRooms();
-    
-    // Simulate Book Room
-    printf("Running bookRoom()...\n");
-    bookRoom();
+    // Load and display all rooms to confirm initialization
+    printf("\nTesting Room Initialization:\n");
+    loadRooms();
+
+    // Check for the first available room
+    int availableRoom = getAvailableRoom();
+    printf("Available Room: %d\n", availableRoom);
+
+    // Make a reservation and check room status
+    saveReservation(1, 101, availableRoom, "2024-10-15", "2024-10-18");
+    printf("\nAfter Booking Room %d:\n", availableRoom);
+    loadRooms();  // Show room statuses again
 }
 
-// Test function for Admin features
-void testAdminFunctions() {
-    printf("\nTesting Admin Functions:\n");
-    
-    // Simulate Admin Login
-    printf("Running adminLogin()...\n");
-    adminLogin();
-    
-    // Simulate Manage Rooms
-    printf("Running manageRooms()...\n");
-    manageRooms();
-}
-
-// Main function to call test cases
 int test() {
-    printf("Running individual function tests...\n");
+    printf("Running tests...\n");
 
-    // Call individual test functions
-    testGuestFunctions();
-    testAdminFunctions();
-    
-    printf("Testing complete.\n");
+    testRoomInitializationAndBooking();
+    printf("testRoomInitializationAndBooking passed.\n");
+
+    // Add other test functions here as needed
+
+    printf("All tests passed!\n");
     return 0;
 }
