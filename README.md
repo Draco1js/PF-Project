@@ -3,7 +3,7 @@
 ### THIS REPO IS ARCHIVED, THE FINAL COMBINED VERSION OF THE PROJECT IS IN THE ROOT OF THE REPOSITORY
 <br><br><br><br><br><br><br>
 
-This is the main repository for the PF Lab Project, anyone contributing needs to verify your github account with me.
+This is the main repository for the Programming Fundamentals (CS1002) Course Final Lab Project, anyone contributing needs to verify your github account with me.
 
 Please look up how to make a pull request, DO NOT commit directly to the repository.
 
